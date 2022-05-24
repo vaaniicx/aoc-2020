@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Advent of Code 2020" />
+        <module name="aoc-2020" />
       </profile>
     </annotationProcessing>
   </component>

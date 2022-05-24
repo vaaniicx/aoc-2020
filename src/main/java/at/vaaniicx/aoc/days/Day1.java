@@ -22,12 +22,27 @@ public class Day1 {
     }
 
     private static int solvePart1(List<Integer> numbers) {
-
+        for (int i = 0; i < numbers.size(); i++) {
+            for (int y = 1; y < numbers.size(); y++) {
+                if (numbers.get(i) + numbers.get(y) == 2020) {
+                    return numbers.get(i) * numbers.get(y);
+                }
+            }
+        }
         return -1;
     }
 
     private static int solvePart2(List<Integer> numbers) {
+        for (int i = 0; i < numbers.size(); i++) {
+            for (int j = 1; j < numbers.size(); j++) {
+                for (int k = 0; k < numbers.size(); k++) {
+                    if (numbers.get(i) + numbers.get(j) + numbers.get(k) == 2020) {
+                        return numbers.get(i) * numbers.get(j) * numbers.get(k);
+                    }
+                }
+            }
 
+        }
         return -1;
     }
 }
